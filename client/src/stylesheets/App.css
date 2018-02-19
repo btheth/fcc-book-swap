@@ -1,0 +1,440 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.error-bar {
+  background-color: #ff7f7f;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 50px;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+  overflow: scroll;
+}
+
+.success-bar {
+  background-color: #90EE90;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 50px;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+  overflow: scroll;
+}
+
+#add-book-body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+#edit-body {
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+#header-bar {
+  position: fixed;
+  width: 100%;
+  background-color: #FFF8DC;
+  height: 53px;
+  text-align: center;
+  border-bottom: 3px solid #ADD8E6;
+}
+
+#header-title {
+  color: #ADD8E6;
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+}
+
+#header-button {
+  font-family: 'Righteous', cursive;
+  font-size: 15px;
+  margin: 5px 0px 5px 10px;
+  height: 40px;
+  width: 150px;
+}
+
+#header-button-right {
+ margin: 5px 10px 5px 10px;;
+ width: 150px;
+}
+
+#header-button-right-invisible {
+ margin: 5px 10px 5px 10px;
+ width: 150px;
+ background-color: #FFF8DC;
+ color: #FFF8DC;
+ border: none;
+ outline: none;
+}
+
+.right-btn {
+  float: right;
+}
+
+.left-btn {
+  float: left;
+}
+
+#title-div {
+  width: 100%;
+  height: 250px;
+  background-color: #ADD8E6;
+  text-align: center;
+  padding: 75px 0px 0px 0px;
+  margin: 0px 0px 25px 0px;
+}
+
+#title {
+  margin: 0px;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 100px;
+}
+
+#home-body {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#outer-scroll {
+  width: 100%;
+  height: 190px;
+  background-color: #FFF8DC;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+}
+
+#outer-scroll #inner-scroll {
+  display: inline-block;
+  position: absolute;
+  line-height: 50px;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  /* Apply animation to this element */  
+  -moz-animation: scroll-left 10s linear infinite;
+  -webkit-animation: scroll-left 10s linear infinite;
+}
+
+#login-title-div {
+  width: 100%;
+  height: 150px;
+  background-color: #ADD8E6;
+  text-align: center;
+  padding: 75px 0px 0px 0px;
+  margin: 0px 0px 25px 0px;
+}
+
+#login-title {
+  margin: 0px;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 100px;
+}
+
+.other-login-option {
+  margin: 25px 0px 25px 0px;
+  font-size: 15px;
+}
+
+#logged-in-title-div {
+  width: 100%;
+  height: 150px;
+  background-color: #ADD8E6;
+  text-align: center;
+  padding: 60px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+#logged-in-title {
+  margin: 0px;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+}
+
+.home-books {
+  border: 1px solid black;
+  height: 190px;
+  width: 125px;
+  margin: 0px 24px 0px 24px;
+  display: inline-block;
+}
+
+.tradeboard-books {
+  border: 2px solid #ADD8E6;
+  border-style: collapse;
+  width: 50%;
+  height: 50vh;
+  background-color: #FFF8DC;
+  text-align: left;
+}
+
+.book-div {
+  overflow: auto;
+  height: 100%;
+}
+
+.trade-table-th {
+  width: 25%;
+}
+
+hr {
+  margin: 2px;
+  background-color: #ADD8E6;
+}
+
+#tradeboard-body {
+  width: 82%;
+  margin: 0 auto;
+}
+
+#trade-table {
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+.book-select {
+  font-size: 15px;
+  text-align: left;
+  vertical-align:top;
+  border: 2px solid #ADD8E6;
+  border-style: collapse;
+  height: 20vh;
+  background-color: #FFF8DC;
+}
+
+.book-select-div {
+  overflow: auto;
+  height: 100%;
+}
+
+.trade-book-unselected {
+  font-size: 5px;
+  border: 1px solid black;
+  height: 140px;
+  width: 95px;
+  margin: 10px;
+}
+
+.trade-book-selected {
+  font-size: 5px;
+  border: 5px solid #ADD8E6;
+  height: 140px;
+  width: 95px;
+  margin: 10px;
+}
+
+.add-book-unselected {
+  font-size: 5px;
+  border: 1px solid black;
+  height: 140px;
+  width: 95px;
+  margin: 10px;
+}
+
+.add-book-selected {
+  font-size: 5px;
+  border: 5px solid #FFF8DC;
+  height: 140px;
+  width: 95px;
+  margin: 10px;
+}
+
+.disabled {
+  disabled: disabled;
+}
+
+.request-btn {
+  margin-bottom: 10px;
+}
+
+#profile-body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+#user-info {
+  text-align: center;
+}
+
+.profile-description-cell {
+  padding: 10px;
+  border: 3px solid #FFF8DC;
+  height: 100px;
+}
+
+.profile-description {
+  overflow: auto;
+  height: 100%;
+}
+
+.user-hist-table {
+  width: 100%;
+  border: 3px solid #ADD8E6;
+  background-color: #FFF8DC;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.hist-header {
+  font-weight: bold;
+  font-size: 15px
+}
+
+.date-cell {
+  width: 15%;
+  border: 3px solid #ADD8E6;
+  padding: 3px;
+}
+
+.action-cell {
+  width: 25%;
+  border: 3px solid #ADD8E6;
+  padding: 3px;
+}
+
+.book-cell {
+  width: 30%;
+  border: 3px solid #ADD8E6;
+  padding: 3px;
+}
+
+.edit-submit {
+  margin-right: 10px;
+}
+
+#search-table {
+  width: 100%;
+  margin-bottom: 25px;
+  border: 3px solid #FFF8DC;;
+  background-color: #ADD8E6;
+}
+
+.cover-cell {
+  width: 10%;
+  padding: 10px;
+  border: 3px solid #FFF8DC;;
+}
+
+.title-cell {
+  width: 20%;
+  padding: 10px;
+  border: 3px solid #FFF8DC;;
+}
+
+.description-cell {
+  padding: 10px;
+  border: 3px solid #FFF8DC;
+}
+
+#trades-body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+#requested-trades {
+  width: 100%;
+}
+
+#my-requests {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.my-trade-table {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 100px;
+  border: 3px solid #FFF8DC;;
+  background-color: #ADD8E6;
+}
+
+.my-trade-book {
+  width: 55px;
+  height: 75px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.my-trade-arrow {
+  width: 30px;
+  height: 25px;
+}
+
+.trades-cover-cell {
+  width: 20%;
+  text-align: center;
+  border: 3px solid #FFF8DC;
+  padding: 3px;
+}
+
+.trades-request-cell {
+  width: 65%;
+  border: 3px solid #FFF8DC;
+  padding: 5px;
+}
+
+.trade-button-cell {
+  width: 15%;
+  border: 3px solid #FFF8DC;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Home page book scroll animation */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%);
+ -webkit-transform: translateX(100%);
+ transform: translateX(100vw);     
+ }
+ 100% { 
+ -moz-transform: translateX(-100%);
+ -webkit-transform: translateX(-100%);
+ transform: translateX(-100%); 
+ }
+}

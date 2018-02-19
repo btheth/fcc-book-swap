@@ -1,0 +1,26 @@
+{
+  "name": "book-trading-club",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^5.0.0",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.3",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.0.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "~2.4.5",
+    "validator": "^9.4.0"
+  }
+}
