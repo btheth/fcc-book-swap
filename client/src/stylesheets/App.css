@@ -1,5 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
+  min-width: 900px;
 }
 
 .App {
@@ -62,7 +63,6 @@ body {
   position: fixed;
   width: 100%;
   background-color: #FFF8DC;
-  height: 53px;
   text-align: center;
   border-bottom: 3px solid #ADD8E6;
 }
@@ -75,15 +75,22 @@ body {
 
 #header-button {
   font-family: 'Righteous', cursive;
-  font-size: 15px;
+  font-size: 1vw;
+  text-align: center;
   margin: 5px 0px 5px 10px;
   height: 40px;
-  width: 150px;
+  width: 10vw;
+  padding: 0.3vw;
 }
 
 #header-button-right {
- margin: 5px 10px 5px 10px;;
- width: 150px;
+ font-family: 'Righteous', cursive;
+ margin: 5px 10px 5px 10px;
+ text-align: center;
+ font-size: 1vw;
+ height: 40px;
+ width: 10vw;
+ padding: 0.3vw;
 }
 
 #header-button-right-invisible {
